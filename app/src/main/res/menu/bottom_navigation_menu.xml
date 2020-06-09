@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:bbn_itemColorActive="#FFFFFFFF"
-        app:bbn_itemColorInactive="#7FFFFFFF"
-        app:bbn_badgeColor="#FFCC0000"
-        app:bbn_rippleColor="#99FFFFFF">
+        xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
             android:id="@+id/page_1"
             android:color="@color/colorPrimaryDark"
-            android:icon="@mipmap/ic_launcher_round"
-            app:showAsAction="never"
+            android:icon="@mipmap/ic_heart"
             android:title="@string/favorito"/>
     <item
             android:id="@+id/page_2"
             android:color="@color/colorPrimaryDark"
-            android:icon="@mipmap/ic_launcher_round"
+            android:icon="@mipmap/ic_add"
             android:title="@string/adcionar"/>
 
     <item
             android:id="@+id/page_3"
             android:color="@color/colorPrimaryDark"
-            android:icon="@drawable/icon_3"
+            android:icon="@mipmap/ic_covid"
             android:title="@string/covid19"/>
 </menu>
