@@ -7,10 +7,15 @@
         android:fitsSystemWindows="true">
 
     <WebView
-            android:id="@+id/webview"
+            android:id="@+id/my_web_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#aaa" />
+
 
 
 
