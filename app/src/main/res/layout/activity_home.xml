@@ -9,23 +9,36 @@
     <WebView
             android:id="@+id/my_web_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
 
-    <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#aaa" />
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#aaa" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_x="-2dp"
+                android:layout_y="277dp"
+                android:background="@color/lightGrey"
+                android:clipChildren="false"
+                app:itemBackground="@color/lightGrey"
+                app:itemIconTint="@color/colorPrimary"
+                app:itemTextColor="@color/menu_text_color"
+                app:labelVisibilityMode="unlabeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/container"
+                app:menu="@menu/bottom_navigation_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
+    </WebView>
 
 
-    <it.sephiroth.android.library.bottomnavigation.BottomNavigation
-            android:id="@+id/BottomNavigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:bbn_entries="@menu/bottom_navigation_menu"
-            app:bbn_scrollEnabled="true"
-            app:bbn_badgeProvider="@string/bbn_badgeProvider"
-            app:layout_behavior="@string/bbn_phone_view_behavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
