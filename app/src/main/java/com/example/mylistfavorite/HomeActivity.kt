@@ -18,7 +18,7 @@ import it.sephiroth.android.library.bottomnavigation.BottomNavigation
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_login.*
 
-public class HomeActivity() : AppCompatActivity(),ButtomNavigation.OnNavigationItemSelectedListener {
+public class HomeActivity() : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
